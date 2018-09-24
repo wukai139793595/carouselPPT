@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="img-content">
+            <div class="img-box img-box1">
+                <div class="title">
+                    <h2>标题一</h2>
+                    <p>这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容</p>
+                </div>
+                <div class="img">
+                    <img src="./images/img-1.png" alt="">
+                </div>
+            </div>
+            <div class="img-box img-box2">
+                <div class="title">
+                    <h2>标题一</h2>
+                    <p>这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容</p>
+                </div>
+                <div class="img">
+                    <img src="./images/img-2.png" alt="">
+                </div>
+            </div>
+            <div class="img-box img-box3">
+                <div class="title">
+                    <h2>标题一</h2>
+                    <p>这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容这是第一页ppt内容</p>
+                </div>
+                <div class="img">
+                    <img src="./images/img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="dir">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="btn">
+            <ul class="btn-box">
+                <li class="item active"></li>
+                <li class="item "></li>
+                <li class="item "></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/jquery1.11.3.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        var obj = {
+            bgWrap: $('.img-content'),
+            dirWrap: $('.dir'),
+            btnWrap: $('.btn-box')
+        }
+        new BannerPpt(obj)
+    </script>
+</body>
+
+</html>

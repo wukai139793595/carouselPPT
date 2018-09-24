@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body, .wrap{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    position: relative;
+}
+.wrap .img-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.wrap .dir{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* background-color: pink; */
+    /* opacity: 0.5; */
+}
+.wrap .btn{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: 100px;
+    /* background-color: green; */
+    /* opacity: 0.5; */
+}
+.wrap .img-content .img-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 200px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+
+}
+.wrap .img-content .img-box1{
+    background-image: url(../images/bg-1.jpg)
+}
+.wrap .img-content .img-box2{
+    background-image: url(../images/bg-2.jpg);
+    display: none;
+}
+.wrap .img-content .img-box3{
+    background-image: url(../images/bg-3.jpg);
+    display: none;
+}
+.wrap .img-content .img-box .title{
+    float: left;
+    width: 40%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.wrap .img-content .img-box .img{
+    float: right;
+    width: 40%;
+}
+.wrap .img-content .img-box .img img{
+    width: 100%;
+    height: 100%;
+}
+.wrap .img-content .img-box2 .title{
+    display: none;
+}
+.wrap .img-content .img-box3> .title{
+    display: none;
+}
+.wrap .img-content .img-box2 .img{
+    display: none;
+}
+.wrap .img-content .img-box3 .img{
+    display: none;
+}
+
+.wrap .dir div{
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.wrap .dir .left{
+    float: left;
+    margin-left: 100px;
+    background-image: url(../images/left-btn.png)
+}
+.wrap .dir .right{
+    float: right;
+    margin-right: 100px;
+    background-image: url(../images/right-btn.png)
+}
+
+.btn .btn-box{
+    height: 20px;
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
+    /* background-color: green; */
+    text-align: center;
+    cursor: pointer;
+}
+.btn .btn-box .item{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.btn .btn-box .item.active{
+    background-color: pink;
+}
